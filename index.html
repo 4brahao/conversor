@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+
+        <label for="moedaOrigem">De:</label>
+        <select id="moedaOrigem">
+            <option value="BRL">Real (BRL)</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra (GBP)</option>
+            <option value="JPY">Iene (JPY)</option>
+            <option value="ARS">Peso (ARS)</option>
+        </select>
+
+        <label for="moedaDestino">Para:</label>
+        <select id="moedaDestino">
+            <option value="USD">Dólar (USD)</option>
+            <option value="BRL">Real (BRL)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra (GBP)</option>
+            <option value="JPY">Iene (JPY)</option>
+            <option value="ARS">Peso (ARS)</option>
+        </select>
+
+        <input type="number" id="valorEntrada" placeholder="Digite o valor">
+
+        <button onclick="converterMoeda()">Converter</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <footer>
+        Desenvolvido por Pedro Antônio e Pedro Oliveira &copy; 2025
+    </footer>
+
+    <script src="conversor.js"></script>
+</body>
+</html>
